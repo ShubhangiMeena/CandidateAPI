@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "ece7ed30-c053-48cd-ab33-a61baa9af824",
+		"name": "Basics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Khalid Faisal\",\r\n    \"email\": \"khalid.datamax@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/assignScores",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"candidateId\": 1,\r\n    \"first_round\": 7,\r\n    \"second_round\": 8,\r\n    \"third_round\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/assignScores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"assignScores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/getHighest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/getHighest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getHighest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/getAveragingScore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/getAveragingScore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getAveragingScore"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
